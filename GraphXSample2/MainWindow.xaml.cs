@@ -66,17 +66,17 @@ namespace GraphXSample2
             var logicCore = new SampleLogicCore();
 
             // create vertex
-            var q1 = new SampleDataVertex("Sample name 1") { ImageId = 1, Name = "Sample text" };
-            var q2 = new SampleDataVertex("Sample name 2") { ImageId = 2, Name = "Sample text" };
-            var q3 = new SampleDataVertex("Sample name 1") { ImageId = 1, Name = "Sample text" };
-            var q4 = new SampleDataVertex("Sample name 1")
+            var q1 = new SampleDataVertex("^<-- What is it?") { ImageId = 1, Name = "Sample text" };
+            var q2 = new SampleDataVertex("_____________") { ImageId = 2, Name = "_____________" };
+            var q3 = new SampleDataVertex("_____________") { ImageId = 1, Name = "_____________" };
+            var q4 = new SampleDataVertex("_____________")
             {
                 ImageId = 1,
-                Name = "Проверить включение в работу автоматических систем"
+                Name = "_____________"
             };
-            var q5 = new SampleDataVertex("Sample name 2") { ImageId = 2, Name = "Sample text" };
-            var q6 = new SampleDataVertex("Sample name 1") { ImageId = 1, Name = "Sample text" };
-            var q7 = new SampleDataVertex("Sample name 1") { ImageId = 1, Name = "Sample text" };
+            var q5 = new SampleDataVertex("Drag me") { ImageId = 2, Name = "Sample text" };
+            //var q6 = new SampleDataVertex("Sample name 1") { ImageId = 1, Name = "Sample text" };
+            //var q7 = new SampleDataVertex("Sample name 1") { ImageId = 1, Name = "Sample text" };
 
             // add vertex
             logicCore.Graph.AddVertex(q1);
@@ -162,7 +162,7 @@ namespace GraphXSample2
             {
                 {logicCore.Graph.Vertices.ToList()[0], new Point(0, 0)},
                 {logicCore.Graph.Vertices.ToList()[1], new Point(0, 80)},
-                {logicCore.Graph.Vertices.ToList()[2], new Point(-100, 150)},
+                {logicCore.Graph.Vertices.ToList()[2], new Point(-300, 150)},
                 {logicCore.Graph.Vertices.ToList()[3], new Point(0, 220)},
                 {logicCore.Graph.Vertices.ToList()[4], new Point(0, 290)},
                 //{logicCore.Graph.Vertices.ToList()[5], new Point(-100, 360)},
@@ -173,6 +173,7 @@ namespace GraphXSample2
             
             Graph.SetVerticesDrag(true, true);
             ZoomCtrl.ZoomToFill();
+            //ZoomCtrl.Zoom -= 0.3d;
         }
     }
 }

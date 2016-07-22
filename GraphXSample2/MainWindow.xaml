@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:GraphXSample2"
         xmlns:graphx="http://schemas.panthernet.ru/graphx/"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="900" Width="525">
     <Window.Resources>
         <local:EqualToVisibilityConverter x:Key="EqualToVisibilityConverter"/>
         <!--CONNECTION POINT-->
